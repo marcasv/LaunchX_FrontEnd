@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <h1>Pokedex</h1>
+    
+    <div id="poke-left">
+        <div id="img-container">
+            <img src="./pokeball.png" alt="Pokemon" id="pokeImg"><br><br>
+        </div>
+        <div class="rectangulo" style="bottom: 18%; right: 53px; width:50px; height: 15px; background: #000000;"></div>
+        <div class="rectangulo" style="bottom: 14%; right: 70px; width:15px; height: 50px; background: #000000;"></div>
+        <div class="rectangulo" style="bottom: 14%; left: 5%; width:50%; height: 50px; background: #00924e;">
+            <div id="nombre" name="nombre">Name: </div>
+        </div>
+        <br><input type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
+        <br><button id="ejecutar" onclick="fetchPokemon()">Ir</button><br>
+    </div>
+    
+    <div id="poke-right">
+        <div id="borde"></div>
+        <div id="data-screen">
+            <div id="data">
+                <div id="tipo" name="tipo">Type: </div><br>
+                <div id="stats" name="stats">Stats: </div><br>
+            </div>
+        </div>
+        <div id="moves-screen">
+            <div id="moves" name="moves">Moves: </div><br>
+        </div>
+    </div>
+    
+    
+    
+</body>
+<footer>
+    <script src="./index.js"></script>
+</footer>
+</html>
